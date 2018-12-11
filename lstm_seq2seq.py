@@ -40,11 +40,6 @@ num_decoder_tokens = len(target_characters)
 max_encoder_seq_length = max([len(txt) for txt in input_texts])
 max_decoder_seq_length = max([len(txt) for txt in target_texts])
 
-print('Number of samples:', len(input_texts))
-print('Number of unique input tokens:', num_encoder_tokens)
-print('Number of unique output tokens:', num_decoder_tokens)
-print('Max sequence length for inputs:', max_encoder_seq_length)
-print('Max sequence length for outputs:', max_decoder_seq_length)
 
 input_token_index = dict(
     [(char, i) for i, char in enumerate(input_characters)])
